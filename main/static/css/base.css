@@ -4,7 +4,20 @@
     --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.363);
 }
 
-/* Global Styles */
+
+@font-face {
+    font-family: 'WtfGhosrainRegular';
+    src: url(../font/WtfGhosrainRegular-rgM0x.ttf);
+}
+
+
+span {
+    font-family: 'WtfGhosrainRegular', serif;
+    font-size: 48px;
+    line-height: 0;
+}
+
+
 body {
     font-family: "Big Shoulders Stencil", sans-serif;
     font-size: 18px;

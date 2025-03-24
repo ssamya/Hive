@@ -8,6 +8,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cart/', include('cart.urls', namespace='cart')),
+    path('user/', include('users.urls', namespace='user')),
     path('', include('main.urls', namespace='main')),
     path('order_time_page/', views.order_time_page, name='order_time_page'),
     path('thanks/', views.thanks_page, name='thanks_page'),
