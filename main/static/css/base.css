@@ -90,6 +90,10 @@ h5 {
     left: 44.5%;
 }
 
+.header-profile{
+    text-transform: uppercase;
+}
+
 /* Home Section */
 .home {
     align-items: center;
