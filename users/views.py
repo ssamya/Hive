@@ -34,7 +34,7 @@ def registration(request):
             messages.success(
                 request, f'{user.username}, Successful registration!'
             )
-            return HttpResponseRedirect(reverse('user:login'))
+            return HttpResponseRedirect(reverse('users:login'))
     
     else:
         form = UserRegistrationForm()
@@ -51,7 +51,7 @@ def profile(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile was changed')
-            return HttpResponseRedirect(reverse('user:profile'))
+            return HttpResponseRedirect(reverse('users:profile'))
         
     else:
         form = ProfileForm(instance=request.user)
