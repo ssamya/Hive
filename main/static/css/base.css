@@ -352,9 +352,11 @@ input:focus {
     width: 20px;
     height: 20px;
     font-size: 13px;
+    color: white;
+    background-color: blueviolet;
     border: 1px solid #000;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: -40px;
 }
 
