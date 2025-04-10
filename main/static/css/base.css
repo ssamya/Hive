@@ -128,8 +128,10 @@ input:focus {
 }
 
 .home {
+    width: 100%;
+    height: 100%;
     align-items: center;
-    background: url("../img/pexels-photo-908184.webp");
+    background-color: #fff3ff;
 }
 
 .home-title {
@@ -167,10 +169,23 @@ input:focus {
     height: 195px;
 }
 
+.price-add {
+    max-width: 400px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+    margin-left: -3%;
+}
+
 .price {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: -10px;
+}
+
+.line-price{
+    width: 50px;
+    height: 50px;
 }
 
 .home-btn {
@@ -240,12 +255,27 @@ input:focus {
 }
 
 .detail-image {
-    width: 650px;
-    height: 650px;
+    max-height: 550px;
+    max-width: 550px;
+    width: 100%;
+    height: 100%;
+}
+
+.wodics {
+    margin-left: -3%;
+}
+
+.detail-img {
+    max-width: 650px;
+    max-height: 650px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;  
 }
 
 .detail-product {
-    margin-top: 80px;
+    margin-top: 2%;
 }
 
 .detail-description {
@@ -275,6 +305,7 @@ input:focus {
     opacity: 0.7;
     text-decoration: line-through;
     font-weight: 300;
+    font-size: 20px;
 }
 
 .cart-btn {
@@ -502,18 +533,19 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
     width: 180px;
     height: 50px;
-    border: 1px solid #00000034;
+    border: 3px solid #fff3ff;
     border-radius: 5px;
     margin: 0;
     transition: all 0.5s ease;
-    background-color: #fff;
+    background-color: #000000;
     margin-top: 25px;
 }
 
 .add-to-cart-btn:hover {
-    border: 1px solid #000000;
+    border: 3px solid #000000;
 }
 
 .login {
@@ -761,15 +793,17 @@ input:focus {
 
 .image-nav {
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 55%;
+    justify-content: center;
+    justify-items: center;
     width: 100%;
     text-align: center;
+    align-items: center;
 }
 
 .prev-btn, .next-btn {
     color: #000;
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     padding: 10px 20px;
     font-size: 24px;
@@ -778,11 +812,11 @@ input:focus {
 }
 
 .next-btn:hover {
-    background-color: #00000013;
+    background-color: #fff3ff;
 }
 
 .prev-btn:hover {
-    background-color: #00000013;
+    background-color: #fff3ff;
 }
 
 .prev-btn {
@@ -826,4 +860,11 @@ input:focus {
 
 .create-order {
     width: 270px;
+}
+
+.home-recomendation {
+    margin-top: 5%;
+    height: 10%;
+    width: 25%;
+
 }

@@ -48,22 +48,20 @@
 
         <div class="detail-description">
             <h2>{{ product.name }}</h2>
-            <h3>Category: {{ product.category }}</h3>
-            <p>Description: {{ product.description|linebreaks }}</p>
-            {% if product.discount %}
+            <h5>Category: {{ product.category }}</h5>
+            <div class="price-add d-flex justify-content-center">
+                {% if product.discount %}
                 <div class="cart-discount d-flex gap-2">
                     <p class="line">$ {{ product.price }}</p>
-                    <p>$ {{ product.sell_price }}</p>
+                    <p class="price">$ {{ product.sell_price }}</p>
+                    <input type="submit" class='add-to-cart-btn' value='Add to cart'>
                 </div>
             {% else %}
-                <p class="price">$ {{ product.price }}</p>
-            {% endif %}
-            <form action="{% url 'cart:cart_add' product.id %}" class='qform' method='post'>
-                <div class="cart-form">
-                    {{ cart_product_form }}
-                    {% csrf_token %}
-                </div>
+                <p class="price wodics">$ {{ product.price }}</p>
                 <input type="submit" class='add-to-cart-btn' value='Add to cart'>
+            {% endif %}
+            </div>
+            <p>Description:{{ product.description|linebreaks }}</p>
             </form>
         </div>
     </div>
