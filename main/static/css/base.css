@@ -121,22 +121,26 @@ input:focus {
 .container {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1500px;
-    height: 100%;
-    max-height: 1500px;
+    max-width: 1920px;
+    min-height: 500px; /* Добавлено минимальной высоты */
+    height: auto; /* Заменили height: 100% */
     margin: 0 auto;
+    overflow: hidden; /* Предотвращает выпадание содержимого */
 }
 
 .home {
+    max-width: 1920px;
+    max-height: 1080px;
     width: 100%;
     height: 100%;
     align-items: center;
-    background-color: #fff3ff;
+    background-color: #fff;
+    background-image: url("/static/img/backimg.jpg");
 }
 
 .home-title {
-    margin-top: 210px;
-    margin-bottom: 50px;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 .home-cards {
@@ -170,11 +174,10 @@ input:focus {
 }
 
 .price-add {
-    max-width: 400px;
+    max-width: 700px;
     width: 100%;
     max-height: 80px;
     height: 100%;
-    margin-left: -3%;
 }
 
 .price {
@@ -255,14 +258,19 @@ input:focus {
 }
 
 .detail-image {
-    max-height: 550px;
-    max-width: 550px;
+    max-height: 500px;
+    max-width: 500px;
     width: 100%;
     height: 100%;
+    margin-top: 3%;
 }
 
 .wodics {
-    margin-left: -3%;
+    max-height: 20px;
+    max-width: 60px;
+    height: 100%;
+    width: 50%;
+    margin-right: 35%;
 }
 
 .detail-img {
@@ -276,11 +284,15 @@ input:focus {
 
 .detail-product {
     margin-top: 2%;
+    max-width: 1200px;
+    max-height: 800px;
+    height: 100%;
+    width: 100%;
 }
 
 .detail-description {
-    margin-left: 40px;
-    margin-top: 40px;
+    margin-left: 5%;
+    margin-top: 1%;
 }
 
 .detail-description p {
@@ -306,6 +318,22 @@ input:focus {
     text-decoration: line-through;
     font-weight: 300;
     font-size: 20px;
+}
+
+.line-plus {
+    height: 70%;
+    max-height: 20px;
+    max-width: 60px;
+    height: 100%;
+    width: 25%;
+    
+}
+
+.price-plus {
+    max-height: 20px;
+    max-width: 60px;
+    height: 100%;
+    width: 50%;
 }
 
 .cart-btn {
@@ -529,13 +557,20 @@ input:focus {
     margin-top: 25px;
 }
 
+.cart-discount-detail{
+    width: 100%;
+    height: 100%;
+}
+
 .add-to-cart-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    width: 180px;
-    height: 50px;
+    max-width: 180px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
     border: 3px solid #fff3ff;
     border-radius: 5px;
     margin: 0;
@@ -863,8 +898,10 @@ input:focus {
 }
 
 .home-recomendation {
-    margin-top: 5%;
-    height: 10%;
-    width: 25%;
+    margin-top: 3%;
+    height: 20%;
+    width: 50%;
+    margin-right: 53%;
+    margin-bottom: 2%;
 
 }
