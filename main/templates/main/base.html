@@ -25,14 +25,14 @@
                 </ul>
             </navbar>
             <div class="header-logo">
-                <a href="/shop"><img src="{% static 'img/takara.png' %}" alt="" class="heavy-logo"></a>
+                <a href="/shop"><img src="{% static '' %}" alt="" class="heavy-logo"></a>
             </div>
             <div class="header-profile pt-2">
                 <a href="{% url "cart:cart_detail" %}"><img src="{% static 'img/cart_image_shop.png' %}" class="grob" alt=""></a>
                 {% if user.is_authenticated %}
-                    <a href="{% url "users:profile" %}">PROFILE</a>
+                    <a href="{% url "users:profile" %}" class="nav-a m-2" >PROFILE</a>
                 {% else %}
-                    <a href="{% url "users:login" %}" class="m-2">LOGIN</a>
+                    <a href="{% url "users:login" %}" class="nav-a m-2">LOGIN</a>
                 {% endif %}
                 <p class="cart-quantity">
                     {% with cart_quantity=cart|length %}

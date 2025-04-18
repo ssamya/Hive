@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "dark";
-    src: url(../fonts/Blackblade.ttf);
+    src: url(../font/Anton-Regular.ttf);
 }
 
 span {
@@ -24,6 +24,7 @@ body {
 }
 
 ul {
+    font-family: "dark";
     list-style: none;
     padding: 0;
 }
@@ -34,15 +35,18 @@ a {
 }
 
 h1 {
+    font-family: "dark";
     font-size: 48px;
 }
 
 h2 {
+    font-family: "dark";
     font-size: 48px;
     font-weight: 600;
 }
 
 h3 {
+    font-family: "dark";
     font-size: 36px;
 
 }
@@ -103,6 +107,10 @@ input:focus {
     text-transform: uppercase;
 }
 
+.header-profile {
+    font-family: "dark";
+}
+
 .heavy-logo {
     position: fixed;
     top: 0.5%;
@@ -128,14 +136,18 @@ input:focus {
     overflow: hidden; /* Предотвращает выпадание содержимого */
 }
 
-.home {
+.index-backimg {
+    background-image: url("/static/img/backimg.jpg");
     max-width: 1920px;
     max-height: 1080px;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.home {
     align-items: center;
     background-color: #fff;
-    background-image: url("/static/img/backimg.jpg");
 }
 
 .home-title {
@@ -349,6 +361,7 @@ input:focus {
 }
 
 .main-title {
+    font-family: "dark";
     font-size: 36px;
     margin-bottom: 1%;
     margin-top: 6%;
@@ -406,6 +419,7 @@ input:focus {
 }
 
 .cart-quantity {
+    font-family: "dark";
     position: absolute;
     border-radius: 20px;
     width: 20px;
@@ -532,6 +546,7 @@ input:focus {
 
 
 .cart-price {
+    font-family: "dark";
     font-size: 16px;
 }
 

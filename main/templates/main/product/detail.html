@@ -50,18 +50,20 @@
             <h2>{{ product.name }}</h2>
             <h5>Category: {{ product.category }}</h5>
             <div class="price-add d-flex justify-content-center">
+            <form action="{% url 'cart:cart_add' product.id %}" method="post" class="price-add d-flex justify-content-center">
+                {% csrf_token %}    
                 {% if product.discount %}
                 <div class="cart-discount-detail d-flex gap-2">
                     <p class="line line-plus">$ {{ product.price }}</p>
                     <p class="price price-plus">$ {{ product.sell_price }}</p>
                     <input type="submit" class='add-to-cart-btn' value='Add to cart'>
                 </div>
-            {% else %}
-                <p class="price wodics">$ {{ product.price }}</p>
-                <input type="submit" class='add-to-cart-btn' value='Add to cart'>
-            {% endif %}
-            </div>
-            <p>Description:{{ product.description|linebreaks }}</p>
+                {% else %}
+                    <p class="price wodics">$ {{ product.price }}</p>
+                    <input type="submit" class='add-to-cart-btn' value='Add to cart'>
+                {% endif %}
+                </div>
+                <p>Description:{{ product.description|linebreaks }}</p>
             </form>
         </div>
     </div>
